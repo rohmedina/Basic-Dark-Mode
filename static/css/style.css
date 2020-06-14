@@ -1,0 +1,185 @@
+nav {
+  background: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  box-shadow: var --sombraDark;
+}
+body.dark nav {
+  background: var(--grisOscuro);
+  box-shadow: var(--sombraLight);
+}
+body.dark nav a {
+  color: var(--grisClaro);
+}
+body.dark nav a:hover {
+  color: var(--blanco);
+}
+nav .logo {
+  font-weight: 700;
+  font-family: "Roboto", sans-serif;
+}
+nav .menu {
+  display: flex;
+  align-items: center;
+}
+nav .menu a {
+  margin-right: 40px;
+}
+nav .menu a:hover {
+  color: var(--gris);
+}
+
+.grid {
+  display: grid;
+  grid-gap: 40px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px 0;
+}
+.grid .card {
+  background: var(--blanco);
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: var(--sombraDark);
+  display: flex;
+  align-items: flex-end;
+  position: relative;
+  min-height: 195px;
+  margin-top: 50px;
+  transition: 0.3s ease all;
+}
+body.dark .grid .card {
+  background: var(--grisOscuro);
+  box-shadow: var(--sombraLight);
+}
+.grid .card img {
+  vertical-align: top;
+  border-radius: 7px;
+  position: absolute;
+  top: -50px;
+  width: calc(100% - 40px);
+  max-height: 165px;
+  object-fit: cover;
+}
+
+:root {
+  --negro: #111111;
+  --blanco: #fefefe;
+  --grisOscuro: #222222;
+  --grisClaro: #c8c8c8;
+  --grisClaroHover: #acabab;
+  --azul: #3e60e9;
+  --azulHover: #254be6;
+  --gris: #707070;
+  --sombraDark: 10px 10px 20px rgba(170, 170, 170, 0.16);
+  --sombraLight: 10px 10px 20px rgba(0, 0, 0, 0.16);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--blanco);
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s ease all;
+}
+body.dark {
+  background: var(--negro);
+}
+
+a {
+  color: var(--grisOscuro);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}
+
+.switch {
+  background: #343d5b;
+  border-radius: 1000px;
+  border: none;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  outline: none;
+}
+.switch::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background: #f1f1f1;
+  top: 0;
+  left: 0;
+  right: unset;
+  border-radius: 100px;
+  transition: 0.3s ease all;
+  box-shadow: 0px 0px 2px 2px rgba(0, 0, 0, 0.2);
+}
+.switch.active {
+  background: #eea92a;
+  color: var(--negro);
+}
+.switch.active::after {
+  right: 0;
+  left: unset;
+}
+.switch span {
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
+  display: block;
+  background: none;
+  color: var(--blanco);
+}
+
+.card__botones {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+}
+.card__botones .card__boton {
+  padding: 10px;
+  color: var(--blanco);
+  width: 100%;
+  display: block;
+  background: var(--negro);
+  text-align: center;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+}
+.card__botones .card__boton.boton-primario {
+  background: var(--azul);
+}
+.card__botones .card__boton.boton-primario:hover {
+  background: var(--azulHover);
+}
+.card__botones .card__boton.boton-secundario {
+  background: var(--grisClaro);
+}
+.card__botones .card__boton.boton-secundario:hover {
+  background: var(--grisClaroHover);
+}
+.card__boton .dark .card__botones {
+  background: var(--grisOscuro);
+}
+.card__boton .dark .card__botones:hover {
+  color: var(--blanco);
+}
+
+/*# sourceMappingURL=style.css.map */

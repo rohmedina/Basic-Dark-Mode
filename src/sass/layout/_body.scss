@@ -1,0 +1,33 @@
+.grid {
+  display: grid;
+  grid-gap: 40px 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  padding: 40px 0;
+  .card {
+    background: var(--blanco);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: var(--sombraDark);
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    min-height: 195px;
+    margin-top: 50px;
+    transition: 0.3s ease all;
+
+    body.dark & {
+      background: var(--grisOscuro);
+      box-shadow: var(--sombraLight);
+    }
+
+    img {
+      vertical-align: top;
+      border-radius: 7px;
+      position: absolute;
+      top: -50px;
+      width: calc(100% - 40px);
+      max-height: 165px;
+      object-fit: cover;
+    }
+  }
+}

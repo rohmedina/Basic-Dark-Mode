@@ -1,0 +1,37 @@
+nav {
+  background: var(--blanco);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  border-radius: 5px;
+  transition: 0.3s ease all;
+  box-shadow: var (--sombraDark);
+
+  body.dark & {
+    background: var(--grisOscuro);
+    box-shadow: var(--sombraLight);
+    a {
+      color: var(--grisClaro);
+      &:hover {
+        color: var(--blanco);
+      }
+    }
+  }
+
+  .logo {
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+  }
+
+  .menu {
+    display: flex;
+    align-items: center;
+    a {
+      margin-right: 40px;
+      &:hover {
+        color: var(--gris);
+      }
+    }
+  }
+}

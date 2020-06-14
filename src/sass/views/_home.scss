@@ -1,0 +1,28 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: var(--blanco);
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s ease all;
+
+  &.dark {
+    background: var(--negro);
+  }
+}
+
+a {
+  color: var(--grisOscuro);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.container {
+  max-width: 1000px;
+  width: 90%;
+  margin: auto;
+  padding: 50px 0;
+}

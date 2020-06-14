@@ -1,0 +1,32 @@
+.card__botones {
+  width: 100%;
+  margin-top: 20px;
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: 1fr 1fr;
+
+  .card__boton {
+    padding: 10px;
+    color: var(--blanco);
+    width: 100%;
+    display: block;
+    background: var(--negro);
+    text-align: center;
+    border-radius: 5px;
+    transition: 0.3s ease all;
+
+    &.boton-primario {
+      background: var(--azul);
+      &:hover {
+        background: var(--azulHover);
+      }
+    }
+
+    &.boton-secundario {
+      background: var(--grisClaro);
+      &:hover {
+        background: var(--grisClaroHover);
+      }
+    }
+  }
+}
