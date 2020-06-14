@@ -15,4 +15,4 @@ _page simple para aplicar Dark-Mode_
 
 ---
 
-⌨️ con ❤️ por [Rohmedina](https://github.com/rohmedina) 😊
+⌨️  con  ❤️  por [Rohmedina](https://github.com/rohmedina) 😊
